@@ -1,10 +1,14 @@
+import { AuthProviders, AuthMethods } from 'angularfire2';
+
 export const config = {
-    addTaskUrl: "https://wt-miloszpp-gmail-com-0.run.webtask.io/add-task-bundle",
-    markTaskDoneUrl: "",
     firebase: {
-        apiKey: "AIzaSyAHukcdyBj_WRwJNhE_Si7EN73QVtGDjKs",
-        authDomain: "serverless-todo.firebaseapp.com",
-        databaseURL: "https://serverless-todo.firebaseio.com/",
+        apiKey: "AIzaSyBicGdhNExg3Vae_CqJvGKD64NFElEu4nQ",
+        authDomain: " angular-warsaw.firebaseapp.com",
+        databaseURL: "https://angular-warsaw.firebaseio.com/",
         storageBucket: ""
+    },
+    firebaseAuth: {
+        provider: AuthProviders.Password,
+        method: AuthMethods.Password
     }
 };

@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Register
+  </div>
+  <div class="panel-body">
+    <form (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="model.email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)]="model.password" />
+      </div>
+      <button type="submit" class="btn btn-default">Register</button>
+    </form>
+  </div>
+</div>

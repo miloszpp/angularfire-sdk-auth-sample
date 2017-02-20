@@ -1,1 +1,16 @@
-<app-tasks></app-tasks>
+<div class="container">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="col-sm-3">
+            <app-login></app-login>
+        </div>
+        <div class="col-sm-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<p>
+  Home works!
+  <span *ngIf="af.auth | async">Hello, {{ (af.auth | async)?.auth.displayName }}</span>
+</p>

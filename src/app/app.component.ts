@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { AngularFire } from "angularfire2";
+
+import { RegisterComponent } from "./register/register.component";
+import { HomeComponent } from "./home/home.component";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  constructor() {}
 }
