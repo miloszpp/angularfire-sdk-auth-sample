@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 
+import { AuthProviders, AuthMethods } from 'angularfire2';
+
 const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: '', component: HomeComponent }
