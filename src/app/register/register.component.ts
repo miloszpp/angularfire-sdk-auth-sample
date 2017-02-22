@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-var firebase = require("firebase");
+import { AngularFire, FirebaseAuthState } from 'angularfire2';
 
 @Component({
   selector: 'app-register',
@@ -11,13 +10,12 @@ var firebase = require("firebase");
 export class RegisterComponent {
   public model: RegisterModel;
 
-  constructor(private router: Router) {
+  constructor(private af: AngularFire, private router: Router) {
     this.model = { email: "", password: "" };
   }
 
   public submit() {
-    firebase.auth().createUserWithEmailAndPassword(this.model.email, this.model.password)
-      .then(() => this.router.navigate([""]), alert);
+    this.af.auth.createUser(this.model).then(() => this.router.navigate([""]), alert);
   }
 
 }

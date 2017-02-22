@@ -22,7 +22,6 @@ export class LoginComponent {
   }
 
   public logout() {
-    console.log("logging out");
     this.af.auth.logout();
   }
 
